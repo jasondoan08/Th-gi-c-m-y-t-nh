@@ -1,1 +1,2 @@
-# Th-gi-c-m-y-t-nh
+Môn Thị Giác Máy Tính 
+Đoàn Hoàng Quân-2374802010412
