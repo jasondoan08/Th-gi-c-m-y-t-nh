@@ -5,31 +5,30 @@ Hiểu cơ bản về ảnh số và các thao tác đầu tiên với OpenCV.
 
 ## Lý thuyết chính
 
-1. **Ảnh số trong OpenCV**  
+1. Ảnh số trong OpenCV
    - Ảnh được biểu diễn dưới dạng mảng numpy.ndarray  
    - Shape: (height, width, channels)  
-   - Kênh màu mặc định: **BGR** (Blue-Green-Red)  
+   - Kênh màu mặc định: BGR (Blue-Green-Red)  
    - Kiểu dữ liệu phổ biến: uint8 (0–255)
 
-2. **Vấn đề hiển thị màu**  
-   - OpenCV đọc: **BGR
+2. Vấn đề hiển thị màu  
+   - OpenCV đọc: BGR
    - matplotlib.pyplot.imshow()
 
-3. **Resize (phóng to / thu nhỏ)**  
+3. Resize (phóng to, thu nhỏ)
    - Hàm: cv.resize(img, (width, height), interpolation=...)
    - Interpolation phổ biến:  
      - INTER_CUBIC / INTER_LINEAR: tốt khi phóng to  
      - INTER_AREA: tốt khi thu nhỏ
 
-4. **Crop (cắt vùng)**  
-   - Sử dụng slicing numpy: img[y1:y2, x1:x2]
-   - Tọa độ: hàng (y), cột (x), bắt đầu từ góc trên-trái (0,0)
+4. Crop 
+   - Sử dụng slicing numpy
 
-5. **Ghép ảnh**  
+5. Ghép ảnh 
    - Ngang: np.hstack([img1, img2])  
    - Dọc: np.vstack([img1, img2])  
 
-## Tóm tắt
+Tóm tắt
 Lab giúp nắm rõ:  
 - Sự khác biệt BGR vs RGB  
 - Cách hiển thị ảnh đúng màu  
